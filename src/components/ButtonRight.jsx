@@ -5,7 +5,7 @@ import React from "react";
 const ButtonRight = ({children, onClick}) =>  {
     
     return (
-        <button onClick={onClick} className="w-14 h-14 bg-red-500 text-white font-code rounded-full hover:bg-blue-400 cursor-pointer" >
+        <button onClick={onClick} className="w-14 h-14 bg-red-500 text-white font-code rounded-full hover:bg-red-600 cursor-pointer" >
             {children}
             <p className="text-sm">Delete game</p>
         </button>

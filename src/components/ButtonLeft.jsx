@@ -5,10 +5,12 @@ import React from "react";
 const ButtonLeft = ({children, onClick}) =>  {
     
     return (
-        <button onClick={onClick} className="w-14 h-14 bg-blue-500 text-white font-code rounded-full hover:bg-blue-400 cursor-pointer" >
+        <div>
+        <button onClick={onClick} className="w-14 h-14 bg-blue-500 text-white font-code rounded-full hover:bg-blue-600 cursor-pointer" >
             {children}
-            <p className="text-sm">Add game</p>
+            <p className="text-sm">Add Game</p>
         </button>
+        </div>
     )
 }
 
