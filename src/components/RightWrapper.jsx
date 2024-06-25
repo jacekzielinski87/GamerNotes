@@ -5,27 +5,23 @@ import { useState } from "react";
 // eslint-disable-next-line react/prop-types
 function RightWrapper ({onClick}) {
 
-    const [game, setGame] = useState('');
+const [newItem, setNewItem] = useState('');
 
-    function deleteGame () {
-        event.preventDefault();
-        console.log(setGame)
-       }
-
-
-  return (
+return (
     <>
     <aside className="flex justify-center items-start">
         <div className="p-6">
             <ButtonRight onClick={onClick}/>    
         </div>
     </aside>
-    <div className="flex justify-center items-end">
-        <input type='text' required value={game} onChange={(e) => setGame(e.target.value)} className="w-10 h-6"/> 
+    <div className="flex justify-center items-start">
+        <input 
+            type='text' 
+            value={newItem} 
+             onChange={(e) => setNewItem(e.target.value)} 
+            className="w-40 h-10 absolute top-40 right-20"/> 
     </div>
-        <div className="bg-red-500 h-1/2 w-80 absolute top-60 right-20 rounded-lg">
-            {game}
-        </div>
+        <div className="bg-red-500 h-1/2 w-80 absolute top-60 right-20 rounded-lg"></div>
         
     </>
   );

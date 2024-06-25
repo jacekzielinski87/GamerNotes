@@ -6,13 +6,15 @@ import RightWrapper from './components/RightWrapper';
 
 
 
+
 function App() {
 
-  const handleClick = () =>  {
-    console.log("Click");
+const handleClick = (e) => {
+    e.preventDefault();
+    console.log("Add");    
   };
-  
-return (
+
+  return (
      <>
      <div className="bg-[url('assets/Bg.jpg')] flex justify-center">
         <LeftWrapper onClick={handleClick}/>
