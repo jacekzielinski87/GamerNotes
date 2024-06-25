@@ -6,9 +6,9 @@ import React from "react";
 const ButtonRight = ({children, onClick}) =>  {
 
 return (
-    <button onClick={onClick} className="w-16 h-16 bg-red-500 text-white font-code rounded-full hover:bg-red-600 cursor-pointer m-32" >
+    <button onClick={onClick} className="w-16 h-16 bg-red-500 text-white font-code rounded-full hover:bg-red-600 cursor-pointer m-32 text-sm" >
         {children}
-        <p className="text-sm">Delete game</p>
+        Delete game
     </button>
     )
 }

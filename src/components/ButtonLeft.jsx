@@ -7,9 +7,9 @@ const ButtonLeft = ({children, onClick}) =>  {
     
 return (
     <div>
-        <button onClick={onClick} className="w-16 h-16 bg-blue-500 text-white font-code rounded-full hover:bg-blue-600 cursor-pointer p-1 m-32" >
+        <button onClick={onClick} className="w-16 h-16 bg-blue-500 text-white font-code rounded-full hover:bg-blue-600 cursor-pointer p-1 m-32 text-sm" >
             {children}
-            <p className="text-sm">Add Game</p>
+            Add Game
         </button>
     </div>
     )
